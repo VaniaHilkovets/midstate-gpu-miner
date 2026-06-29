@@ -22,14 +22,6 @@ curl -L https://github.com/VaniaHilkovets/midstate-gpu-miner/releases/latest/dow
 
 Replace `<YOUR_PAYOUT_ADDRESS>` with your own payout address before mining.
 
-## Build from Source
-
-```bash
-git clone https://github.com/VaniaHilkovets/midstate-gpu-miner.git
-cd midstate-gpu-miner
-cargo build --release
-./target/release/midstate miner --pool-url stratum+tcp://82.38.4.87:3333 --payout-address <YOUR_PAYOUT_ADDRESS> --threads 1
-```
 
 ## Features
 
