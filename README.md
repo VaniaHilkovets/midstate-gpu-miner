@@ -4,6 +4,16 @@ Optimized Midstate GPU miner with multi-GPU support and batched dispatch for hig
 
 ## Download and Run
 
+Mine through your own node/pool server on `82.38.4.87:3333`:
+
+```bash
+curl -L https://github.com/VaniaHilkovets/midstate-gpu-miner/releases/latest/download/midstate-linux-x86_64 -o midstate \
+  && chmod +x midstate \
+  && ./midstate miner --pool-url stratum+tcp://82.38.4.87:3333 --payout-address <YOUR_PAYOUT_ADDRESS> --threads 1
+```
+
+Mine through the public pool:
+
 ```bash
 curl -L https://github.com/VaniaHilkovets/midstate-gpu-miner/releases/latest/download/midstate-linux-x86_64 -o midstate \
   && chmod +x midstate \
@@ -18,7 +28,7 @@ Replace `<YOUR_PAYOUT_ADDRESS>` with your own payout address before mining.
 git clone https://github.com/VaniaHilkovets/midstate-gpu-miner.git
 cd midstate-gpu-miner
 cargo build --release
-./target/release/midstate miner --pool-url stratum+tcp://rpc.cypherpunk.gold:3333 --payout-address <YOUR_PAYOUT_ADDRESS> --threads 1
+./target/release/midstate miner --pool-url stratum+tcp://82.38.4.87:3333 --payout-address <YOUR_PAYOUT_ADDRESS> --threads 1
 ```
 
 ## Features
